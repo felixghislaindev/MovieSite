@@ -1,0 +1,215 @@
+/* global */
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+:root{
+    --main-black: #1E202B;
+    --main-blue: #08AEEA;
+    --main-green: #2AF598;
+    --main-gradient: linear-gradient(to right, var(--main-blue), var(--main-green));
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    background-color: #fff;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--main-black);
+}
+h2{
+    font-size: 36px;
+    font-size: 700;
+    color: var(--main-black);
+}
+
+p, li{
+font-size: 16px;
+font-weight: 400;
+color: var(--main-black);
+}
+.btnWhite{
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase; 
+    margin-bottom: 135px;
+    background: #2af598; /* Old Browsers */
+    background: -webkit-linear-gradient(bottom right,#2af598,#08aeea); /*Safari 5.1-6*/
+    background: -o-linear-gradient(bottom right,#2af598,#08aeea); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(bottom right,#2af598,#08aeea); /*Fx 3.6-15*/
+    background: linear-gradient(bottom right, #2af598, #08aeea); /*Standard*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
+
+.btnGroup{
+    position: relative;
+    z-index: 1;
+}
+
+.whiteBG{
+    background-color: white;
+    display: block;
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    border-radius: 3px;
+}
+.btnColor{
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-image: var(--main-gradient);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+.btnGreen{
+    color: var(--main-green);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+span{
+    color: var(--main-green)
+}
+
+/* header/nav */
+nav{
+    display: inline-block;
+    width: 100%;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    line-height: 100px;
+}
+.logo{
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+nav ul{
+    float: right;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+header{
+    background-image: linear-gradient(to top left,var(--main-green),var(--main-blue),transparent), url('../images/deadpoolheader.png');
+	;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 900px;
+    width: 90%;
+    padding: 0 5%;
+    position: relative;
+    
+}
+header p {
+    color: #fff;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+header h1{
+    color: #fff;
+    width: 55%;
+    margin: 90px 0 40px 0;
+}
+
+.ipad{
+    width: 60%;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+
+}
+.mobile{
+    display: none;
+}
+#toggle{
+    display: none;
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+.mobile ul{
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.1)
+}
+.mobile ul li{
+margin: 0;
+width: 100%;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+}
+#toggle:checked ~ ul{
+    display: block;
+}
+
+/* movie section */
+.new4kMovie{
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 160px;
+}
+.new4kMovie ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+.new4kMovie ul li img{
+    width: 92%;
+   height: 92%;
+    margin: 4%;
+}
+.sectionTitle h2, .sectionTitle a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.sectionTitle a {
+    margin-left: 20px;
+}
+.sectionTitle{
+    margin: 50px 0 20px 0;
+}
